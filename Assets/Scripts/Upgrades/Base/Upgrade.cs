@@ -81,7 +81,6 @@ public abstract class Upgrade
         _currentLevel++;
         OnLevelUp?.Invoke();
         OnUpgrade(_currentLevel);
-        Debug.Log(_currentLevel);
     }
 
     protected abstract void OnUpgrade(int level);
