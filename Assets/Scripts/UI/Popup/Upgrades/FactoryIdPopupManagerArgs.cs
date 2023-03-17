@@ -1,8 +1,7 @@
 
 
-public enum FactoryIdArg 
+public enum FactoryIdPopupManagerArgs 
 {
-    none,
     first,
     second,
     third
