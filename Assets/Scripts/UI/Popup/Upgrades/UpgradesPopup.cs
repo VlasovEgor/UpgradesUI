@@ -7,7 +7,7 @@ public class UpgradesPopup : Popup
 
     protected override void OnShow(object args)
     {
-        if (args is not FactoryIdPopupManagerArgs factoryIdArg)
+        if (args is not ConveyorIdPopupManagerArgs factoryIdArg)
         {
             throw new Exception("Expected FactoryIdArg!");
         }

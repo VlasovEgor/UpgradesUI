@@ -22,11 +22,9 @@ public class UpgradeListPresenter : MonoBehaviour, IConstructListener
         _context = context;
     }
 
-
-    [Button]
-    public void Show(string factoryId)
+    public void Show(string conveyorID)
     {
-        Upgrade[] upgrades = _upgradesManager.GetAllUpgrades(factoryId);
+        Upgrade[] upgrades = _upgradesManager.GetAllUpgrades(conveyorID);
 
         foreach (var upgrade in upgrades)
         {
@@ -47,7 +45,6 @@ public class UpgradeListPresenter : MonoBehaviour, IConstructListener
         }
     }
 
-    [Button]
     public void Hide()
     {
         foreach (var presenter in _activePresenter)
